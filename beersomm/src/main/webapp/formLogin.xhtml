@@ -1,0 +1,41 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+
+        <link rel="stylesheet" href="resources/css/estilos.css"/>
+        <title>Tela de Login</title>
+
+    </h:head>
+    <h:body>
+
+        <p:commandButton value=" Realizar o Login" oncomplete="dlgNovo.show();" image="icon-add"/>      
+
+        <!-- Formulário para inserir Usuário e Senha -->
+
+        <h:form id="formUsuario">
+
+            <p:dialog header="Realizar o Login" widgetVar="dlgNovo" resizable="false" id="dlgNovo"  
+                      showEffect="fade" hideEffect="explode" modal="true">  
+
+                <p:growl id="growl" showDetail="true" sticky="true" />   
+
+                <h:panelGrid id="pgNovo" columns="2" cellpadding="4" style="margin:0 auto;">  
+
+                    <h:outputText value="CPF" />  
+                    <p:inputText />
+                    <h:outputText value="Senha" />  
+                    <p:inputText />
+
+                </h:panelGrid>
+                
+                <p:separator />
+
+                <p:commandButton value=" Logar" />
+                
+            </p:dialog> 
+        </h:form>
+
+    </h:body>
+</html>

@@ -36,7 +36,7 @@ public class Principal {
 	
 	public static void main(String[] args) throws Exception {
 		
-		Cerveja beer = new Cerveja();
+		/*Cerveja beer = new Cerveja();
 		Avaliador avaliador = new Avaliador();
 		Avaliacao avaliacao = new Avaliacao();
 		/*
@@ -44,12 +44,13 @@ public class Principal {
 		 * 
 		  * Dados Avaliador
 		  */
-		 avaliador.setNome("Henrique");
+		/* avaliador.setNome("Henrique");
 		 avaliador.setMatricula(123556667);
 		 AvaliadorPersistencia.IncluirAvaliador(avaliador);
 		 /*
 		  * Dados da Cerveja
 		  */
+		/*
 		 beer.setMarca("SKOL");
 		 beer.setFabricante("AMBEV");
 		 beer.setRegiao("Paraná");
@@ -61,7 +62,7 @@ public class Principal {
 		/*
 		 * Visual
 		 */
-	    Visual visual= new Visual();
+	    /*Visual visual= new Visual();
 		visual.setColoracaoEspuma("Amarelo Creme");
 		visual.setLimpidez("Cristalina");
 		visual.setCarbonatacao("Razoavél");
@@ -73,7 +74,7 @@ public class Principal {
 		/*
 		 * Olfativo
 		 */
-		Olfativo olfativo= new Olfativo();
+	/*	Olfativo olfativo= new Olfativo();
 		olfativo.setImpressoesGeraisOlfativas("Fresca(Herbácea)");
 		aromas.add("banana");
 		aromas.add("amendoa");
@@ -84,7 +85,7 @@ public class Principal {
 		/*
 		 * Gustativo
 		 */
-		Gustativo gustativo = new Gustativo();
+		/*Gustativo gustativo = new Gustativo();
 		gustativo.setSabor("Amargo Fugaz");
 		gustativo.setIntensidade("Moderado");
 		gustativo.setDuracao("Medio");
@@ -95,7 +96,7 @@ public class Principal {
 		/*
 		 * Palativo
 		 */
-		Palativo palativo = new Palativo();
+		/*Palativo palativo = new Palativo();
 		palativo.setAlcool("Razoável");
 		palativo.setAcidez("Adequado");
 		palativo.setTextura("Áspero/Rascante");
@@ -109,7 +110,7 @@ public class Principal {
 		/*
 		 * Impressao Geral
 		 */
-		ImpressaoGeral impressaoGeral = new ImpressaoGeral();
+		/*ImpressaoGeral impressaoGeral = new ImpressaoGeral();
 		impressaoGeral.setDescricao("A cerveja Skol é uma cerveja clara, com aroma refinado e sabor leve e suave. "
 				+ "Cerveja Skol é jovem, ousada, irreverente, é a marca referência em eventos e a mais inovadora: foi a primeira cerveja em lata e"
 				+ " lata de alumínio do país, a pioneira em garrafa long neck, lata com boca redondona, garrafa big neck e lata de 473 ml. "
@@ -120,7 +121,7 @@ public class Principal {
 		/*
 		  * Inserir dados para avaliação Final
 		  */
-		 avaliacao.setAvaliador(avaliador);
+		/* avaliacao.setAvaliador(avaliador);
 		 avaliacao.setData("13/04/2014");
 		 avaliacao.setGustativo(gustativo);
 		 avaliacao.setVisual(visual);
@@ -133,7 +134,7 @@ public class Principal {
 		 * Imprimir Relatorio Geral;
 		 * 
 		 * */
-		 System.out.println(CervejaNegocio.imprimirDadosCerveja(beer)); 
+		/* System.out.println(CervejaNegocio.imprimirDadosCerveja(beer)); 
 		 System.out.println(AvaliadorNegocio.imprimirDadosAvaliador(avaliador));
 		 System.out.println(VisualNegocio.imprimirDadosVisual(visual));
 		 System.out.println(OlfativoNegocio.imprimirDadosOlfativo(olfativo));
@@ -141,7 +142,7 @@ public class Principal {
 		 System.out.println(PalativoNegocio.imprimirDadosPalativo(palativo));
 		 System.out.println(ImpressaoGeralNegocio.imprimirDadosImpressaoGeral(impressaoGeral));
 		 System.out.println(AvaliacaoNegocio.imprimirPontuacaoTotal(avaliacao));
-		 System.out.println("Nota final = " +avaliacao.getPontuacaoTotal());
+		 System.out.println("Nota final = " +avaliacao.getPontuacaoTotal());*/
 
 	}
 

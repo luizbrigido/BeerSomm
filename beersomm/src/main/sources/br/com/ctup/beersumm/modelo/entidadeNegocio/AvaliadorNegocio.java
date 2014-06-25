@@ -1,5 +1,7 @@
 package br.com.ctup.beersumm.modelo.entidadeNegocio;
 
+import java.util.List;
+
 import br.com.ctup.beersumm.modelo.entidade.Avaliador;
 
 public class AvaliadorNegocio {
@@ -8,10 +10,21 @@ public class AvaliadorNegocio {
 		   
 		 return "\nAVALIADOR-DEGUSTADOR "+
 		 		"\nAvaliador = " + avaliador.getNome() +
-		 		"\nMatricula = " + avaliador.getMatricula()+
 		 		"\n";
 		 
 			
 		}
+
+	public void cadastrarAvaliador(Avaliador avaliador) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public List<Avaliador> buscarAvaliadores() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	 
+	
 
 }

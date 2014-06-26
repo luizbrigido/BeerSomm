@@ -1,14 +1,16 @@
-package br.com.ctup.beersumm.modelo.entidade;
+package br.com.ctup.beersomm.modelo.entidade;
+
+import java.util.Date;
 
 public class Avaliador {
 	
 	String nome; 
 	String sexo;
 	String endereco;
-	String dataNasc;
-	String bairro;
-	String cidade;
-	String estado;
+	Date dataNasc;
+	Bairro bairro;
+	Cidade cidade;
+	Estado estado;
 	String cep;
 	String telefone;
 	String login;
@@ -16,9 +18,11 @@ public class Avaliador {
 	String email;
 	
 	
-	public Avaliador(String nome2, String sexo2, String endereco2,String dataNasc2,
-			String bairro2, String cidade2, String estado2, String cep2,
-			String telefone2, String login2, String senha2, String email2) {
+	
+	public Avaliador(String nome2, String sexo2, String endereco2,
+			Date dataNasc2, Bairro bairro2, Cidade cidade2, Estado estado2,
+			String cep2, String telefone2, String login2, String senha2,
+			String email2) {
 		// TODO Auto-generated constructor stub
 	}
 	public String getNome() {
@@ -39,22 +43,28 @@ public class Avaliador {
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
 	}
-	public String getBairro() {
+	public Date getDataNasc() {
+		return dataNasc;
+	}
+	public void setDataNasc(Date dataNasc) {
+		this.dataNasc = dataNasc;
+	}
+	public Bairro getBairro() {
 		return bairro;
 	}
-	public void setBairro(String bairro) {
+	public void setBairro(Bairro bairro) {
 		this.bairro = bairro;
 	}
-	public String getCidade() {
+	public Cidade getCidade() {
 		return cidade;
 	}
-	public void setCidade(String cidade) {
+	public void setCidade(Cidade cidade) {
 		this.cidade = cidade;
 	}
-	public String getEstado() {
+	public Estado getEstado() {
 		return estado;
 	}
-	public void setEstado(String estado) {
+	public void setEstado(Estado estado) {
 		this.estado = estado;
 	}
 	public String getCep() {
@@ -87,11 +97,8 @@ public class Avaliador {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
-	public String getDataNasc() {
-		return dataNasc;
-	}
-	public void setDataNasc(String dataNasc) {
-		this.dataNasc = dataNasc;
-	}
+	
+	
+	
+	
 }

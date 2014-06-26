@@ -1,4 +1,4 @@
-package br.com.ctup.beersumm.modelo.entidade;
+package br.com.ctup.beersomm.modelo.entidade;
 
 public class Gustativo  {
 	

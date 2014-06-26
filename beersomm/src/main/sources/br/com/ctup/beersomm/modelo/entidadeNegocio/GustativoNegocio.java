@@ -1,6 +1,6 @@
-package br.com.ctup.beersumm.modelo.entidadeNegocio;
+package br.com.ctup.beersomm.modelo.entidadeNegocio;
 
-import br.com.ctup.beersumm.modelo.entidade.Gustativo;
+import br.com.ctup.beersomm.modelo.entidade.Gustativo;
 
 public class GustativoNegocio {
 	

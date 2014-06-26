@@ -1,9 +1,9 @@
-package br.com.ctup.beersumm.modelo.entidadepersistencia;
+package br.com.ctup.beersomm.modelo.entidadePersistencia;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.ctup.beersumm.modelo.entidade.Avaliacao;
+import br.com.ctup.beersomm.modelo.entidade.Avaliacao;
 
 public class AvaliacaoPersitencia {
 	

@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head></h:head>
+<h:body>
+
+	<h:form id="formCadastroCerveja">
+		<p:messages globalOnly="true" autoUpdate="true" />
+		<p:panel header="Cadastro Cerveja" style="width:600px">
+			<h:panelGrid columns="3">
+				<p:outputLabel for="marca" value="Marca:" />
+				<p:inputText required="true" requiredMessage="Campo Obrigatório!"
+					style="width:400px;txt-transform:uppercase" id="marca"   />
+				<p:message for="marca" />
+
+				<p:outputLabel for="fabricante" value="Fabricante:" />
+				<p:inputText required="true" requiredMessage="Campo Obrigatório!"
+					style="width:400px;txt-transform:uppercase" id="fabricante"   />
+				<p:message for="fabricante" />
+				
+				
+				<p:outputLabel for="regiao" value="Região:" />
+				<p:inputText required="true" requiredMessage="Campo Obrigatório!"
+					style="width:400px;txt-transform:uppercase" id="regiao"/>
+				<p:message for="regiao" />
+
+				<p:outputLabel for="pais" value="País:" />
+				<p:inputText required="true" requiredMessage="Campo Obrigatório!"
+					style="width:400px;txt-transform:uppercase" id="pais"  />
+				<p:message for="pais" />
+
+				<p:outputLabel for="teorAlcoolico" value="Teor Alcoolico:"/>
+				<p:inputText required="true" requiredMessage="Campo Obrigatório!"
+					style="width:200px;txt-transform:uppercase" id="teorAlcoolico" />
+				<p:message for="teorAlcoolico" />
+
+				<p:outputLabel for="temperatura" value="Temperatura:" />
+				<p:inputText required="true" requiredMessage="Campo Obrigatório!"
+					style="width:200px;txt-transform:uppercase" id="temperatura"  />
+				<p:message for="temperatura" />
+
+				<p:outputLabel for="avaliador" value="Avaliador:" />
+				<p:selectOneMenu required="false"
+					requiredMessage="Campo Obrigatório!"
+					style="width:200px;txt-transform:uppercase" id="avaliador"  >
+					<f:selectItem itemLabel="Selecione" itemValue="" />
+					<f:selectItem itemLabel="Henrique" itemValue="PR" />
+					<f:selectItem itemLabel="Luiz" itemValue="SP" />
+					<f:selectItem itemLabel="Eliane" itemValue="MG" />
+					<f:selectItem itemLabel="Valéria" itemValue="MG" />
+				</p:selectOneMenu>
+				<p:message for="avaliador" />
+
+			</h:panelGrid>
+			<f:facet name="footer">
+				<p:commandButton update="formCadastroCerveja"  value="Salvar" />
+				<p:commandButton update="formCadastroCerveja"  value="Avaliar" />
+				<p:commandButton update="formCadastroCerveja"  value="Editar" />
+				<p:commandButton update="formCadastroCerveja" value="Remover" />
+			</f:facet>
+		</p:panel>
+	</h:form>
+</h:body>
+</html>

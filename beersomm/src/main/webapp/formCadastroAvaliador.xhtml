@@ -13,13 +13,13 @@
 			<h:panelGrid columns="3">
 				<p:outputLabel for="nome" value="Nome:" />
 				<p:inputText required="true" requiredMessage="Campo Obrigatório!"
-					style="width:400px;txt-transform:uppercase" id="nome"   value="#{avaliadorbean.nome}"/>
+					style="width:400px;txt-transform:uppercase" id="nome" value="#{avaliadorbean.nome}"  />
 				<p:message for="nome" />
 
 				<p:outputLabel for="sexo" value="Sexo:" />
 				<p:selectOneRadio required="true"
 					requiredMessage="Campo Obrigatório!"
-					style="width:400px;txt-transform:uppercase" id="sexo"  value="#{avaliadorbean.sexo}">
+					style="width:400px;txt-transform:uppercase" id="sexo" value="#{avaliadorbean.sexo}">
 					<f:selectItem itemLabel="Feminino" itemValue="feminino" />
 					<f:selectItem itemLabel="Masculino" itemValue="masculino" />
 				</p:selectOneRadio>
@@ -32,23 +32,23 @@
 
 				<p:outputLabel for="endereco" value="Endereço:" />
 				<p:inputText required="true" requiredMessage="Campo Obrigatório!"
-					style="width:400px;txt-transform:uppercase" id="endereco"  value="#{avaliadorbean.endereco}"/>
+					style="width:400px;txt-transform:uppercase" id="endereco" value="#{avaliadorbean.endereco}" />
 				<p:message for="endereco" />
 
 				<p:outputLabel for="bairro" value="Bairro:" />
 				<p:inputText required="true" requiredMessage="Campo Obrigatório!"
-					style="width:200px;txt-transform:uppercase" id="bairro"  value="#{avaliadorbean.bairro.nomeBairro}"/>
+					style="width:200px;txt-transform:uppercase" id="bairro" value="#{avaliadorbean.nomeBairro}"  />
 				<p:message for="bairro" />
 
 				<p:outputLabel for="cidade" value="Cidade:" />
 				<p:inputText required="true" requiredMessage="Campo Obrigatório!"
-					style="width:200px;txt-transform:uppercase" id="cidade"  value="#{avaliadorbean.cidade.nomeCidade}"/>
+					style="width:200px;txt-transform:uppercase" id="cidade"  value="#{avaliadorbean.nomeCidade}"/>
 				<p:message for="cidade" />
 
 				<p:outputLabel for="estado" value="Estado:" />
 				<p:selectOneMenu required="true"
 					requiredMessage="Campo Obrigatório!"
-					style="width:200px;txt-transform:uppercase" id="estado"  value="#{avaliadorbean.estado.nomeEstado}">
+					style="width:200px;txt-transform:uppercase" id="estado"  value="#{avaliadorbean.nomeEstado}">
 					<f:selectItem itemLabel="Selecione" itemValue="" />
 					<f:selectItem itemLabel="Paraná" itemValue="PR" />
 					<f:selectItem itemLabel="São Paulo" itemValue="SP" />
@@ -65,10 +65,10 @@
 
 				<p:outputLabel for="login" value="Login" />
 				<p:inputText required="true" requiredMessage="Campo Obrigatório!"
-					style="width:200px;txt-transform:uppercase" id="login"  value="#{avaliadorbean.login}" />
+					style="width:200px;txt-transform:uppercase" id="login"  value="#{avaliadorbean.login}"/>
 				<p:message for="login" />
 
-				<p:outputLabel for="senha" value="Senha:" />
+				<p:outputLabel for="senha" value="Senha:"/>
 				<p:password required="true" requiredMessage="Campo Obrigatório!"
 					 id="senha"  value="#{avaliadorbean.senha}"/>
 				<p:message for="senha" />
@@ -76,17 +76,11 @@
 				<p:outputLabel for="dataNasc" value="Data de Nascimento" />
 				<p:calendar id="dataNasc" showOn="button" required="true"
 					requiredMessage="Campo Obrigatório!"
-					style="width:200px;txt-transform:uppercase"  value="#{avaliadorbean.dataNasc}" />
+					style="width:200px;txt-transform:uppercase" />
 				<p:message for="dataNasc" />
-
-
-				
-
-
 			</h:panelGrid>
 			<f:facet name="footer">
-				<p:commandButton update=":formCadastroAvaliador"  value="Salvar" />
-				<p:commandButton update="formCadastroAvaliador" value="Editar" />
+				<p:commandButton update="formCadastroAvaliador"  value="Salvar" />
 				<p:commandButton update="formCadastroAvaliador" value="Remover" />
 			</f:facet>
 		</p:panel>

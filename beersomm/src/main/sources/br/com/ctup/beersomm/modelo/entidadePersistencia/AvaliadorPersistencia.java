@@ -9,13 +9,14 @@ public class AvaliadorPersistencia {
 
 	List<Avaliador> avaliadores = new ArrayList<Avaliador>();
 
-	public Avaliador IncluirAvaliador(Avaliador avaliador) throws Exception {
+	public void IncluirAvaliador(Avaliador avaliador) throws Exception {
 
 		int num = 0;
 		
 		if (num == 0) {
+			
 			avaliadores.add(avaliador);
-			return avaliador;
+			
 		} else {
 			throw new Exception("O Avaliador " + avaliador.getNome()
 					+ " está  cadastrado");
